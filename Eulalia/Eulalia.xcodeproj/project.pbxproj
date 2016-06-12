@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26785DA4A1A0AD58D89495DC /* Pods_Eulalia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D35AD84C3AA1F73B3474DE /* Pods_Eulalia.framework */; };
+		2AA6DAE51D0DFBED00A314AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA6DAE41D0DFBED00A314AC /* AppDelegate.swift */; };
+		2AA6DAE71D0DFBED00A314AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA6DAE61D0DFBED00A314AC /* ViewController.swift */; };
+		2AA6DAEA1D0DFBED00A314AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA6DAE81D0DFBED00A314AC /* Main.storyboard */; };
+		2AA6DAEC1D0DFBED00A314AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA6DAEB1D0DFBED00A314AC /* Assets.xcassets */; };
+		2AA6DAEF1D0DFBED00A314AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA6DAED1D0DFBED00A314AC /* LaunchScreen.storyboard */; };
+		2AA6DAFA1D0DFBED00A314AC /* EulaliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA6DAF91D0DFBED00A314AC /* EulaliaTests.swift */; };
+		2AA6DB051D0DFBED00A314AC /* EulaliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA6DB041D0DFBED00A314AC /* EulaliaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AA6DAF61D0DFBED00A314AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AA6DAD91D0DFBED00A314AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AA6DAE01D0DFBED00A314AC;
+			remoteInfo = Eulalia;
+		};
+		2AA6DB011D0DFBED00A314AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AA6DAD91D0DFBED00A314AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AA6DAE01D0DFBED00A314AC;
+			remoteInfo = Eulalia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AA6DAE11D0DFBED00A314AC /* Eulalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eulalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA6DAE41D0DFBED00A314AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AA6DAE61D0DFBED00A314AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AA6DAE91D0DFBED00A314AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AA6DAEB1D0DFBED00A314AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AA6DAEE1D0DFBED00A314AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AA6DAF01D0DFBED00A314AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA6DAF51D0DFBED00A314AC /* EulaliaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulaliaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA6DAF91D0DFBED00A314AC /* EulaliaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulaliaTests.swift; sourceTree = "<group>"; };
+		2AA6DAFB1D0DFBED00A314AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA6DB001D0DFBED00A314AC /* EulaliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulaliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA6DB041D0DFBED00A314AC /* EulaliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulaliaUITests.swift; sourceTree = "<group>"; };
+		2AA6DB061D0DFBED00A314AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6940C0B6750B687EE682CFE7 /* Pods-Eulalia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eulalia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eulalia/Pods-Eulalia.release.xcconfig"; sourceTree = "<group>"; };
+		A328F6A7D24169F8B398D9E6 /* Pods-Eulalia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eulalia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eulalia/Pods-Eulalia.debug.xcconfig"; sourceTree = "<group>"; };
+		C3D35AD84C3AA1F73B3474DE /* Pods_Eulalia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eulalia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AA6DADE1D0DFBED00A314AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26785DA4A1A0AD58D89495DC /* Pods_Eulalia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA6DAF21D0DFBED00A314AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA6DAFD1D0DFBED00A314AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B60C6EC51DCE978E13655A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A328F6A7D24169F8B398D9E6 /* Pods-Eulalia.debug.xcconfig */,
+				6940C0B6750B687EE682CFE7 /* Pods-Eulalia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2AA6DAD81D0DFBED00A314AC = {
+			isa = PBXGroup;
+			children = (
+				2AA6DAE31D0DFBED00A314AC /* Eulalia */,
+				2AA6DAF81D0DFBED00A314AC /* EulaliaTests */,
+				2AA6DB031D0DFBED00A314AC /* EulaliaUITests */,
+				2AA6DAE21D0DFBED00A314AC /* Products */,
+				04B60C6EC51DCE978E13655A /* Pods */,
+				850C6CAF85236071D2FA9885 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2AA6DAE21D0DFBED00A314AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AA6DAE11D0DFBED00A314AC /* Eulalia.app */,
+				2AA6DAF51D0DFBED00A314AC /* EulaliaTests.xctest */,
+				2AA6DB001D0DFBED00A314AC /* EulaliaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AA6DAE31D0DFBED00A314AC /* Eulalia */ = {
+			isa = PBXGroup;
+			children = (
+				2AA6DAE41D0DFBED00A314AC /* AppDelegate.swift */,
+				2AA6DAE61D0DFBED00A314AC /* ViewController.swift */,
+				2AA6DAE81D0DFBED00A314AC /* Main.storyboard */,
+				2AA6DAEB1D0DFBED00A314AC /* Assets.xcassets */,
+				2AA6DAED1D0DFBED00A314AC /* LaunchScreen.storyboard */,
+				2AA6DAF01D0DFBED00A314AC /* Info.plist */,
+			);
+			path = Eulalia;
+			sourceTree = "<group>";
+		};
+		2AA6DAF81D0DFBED00A314AC /* EulaliaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AA6DAF91D0DFBED00A314AC /* EulaliaTests.swift */,
+				2AA6DAFB1D0DFBED00A314AC /* Info.plist */,
+			);
+			path = EulaliaTests;
+			sourceTree = "<group>";
+		};
+		2AA6DB031D0DFBED00A314AC /* EulaliaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AA6DB041D0DFBED00A314AC /* EulaliaUITests.swift */,
+				2AA6DB061D0DFBED00A314AC /* Info.plist */,
+			);
+			path = EulaliaUITests;
+			sourceTree = "<group>";
+		};
+		850C6CAF85236071D2FA9885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D35AD84C3AA1F73B3474DE /* Pods_Eulalia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AA6DAE01D0DFBED00A314AC /* Eulalia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA6DB091D0DFBED00A314AC /* Build configuration list for PBXNativeTarget "Eulalia" */;
+			buildPhases = (
+				6C4D80948B8C5E36FA5DC568 /* [CP] Check Pods Manifest.lock */,
+				2AA6DADD1D0DFBED00A314AC /* Sources */,
+				2AA6DADE1D0DFBED00A314AC /* Frameworks */,
+				2AA6DADF1D0DFBED00A314AC /* Resources */,
+				0110FADA05FC06ED2C2254B7 /* [CP] Embed Pods Frameworks */,
+				EAE836EC519B2783CFDC7700 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eulalia;
+			productName = Eulalia;
+			productReference = 2AA6DAE11D0DFBED00A314AC /* Eulalia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AA6DAF41D0DFBED00A314AC /* EulaliaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA6DB0C1D0DFBED00A314AC /* Build configuration list for PBXNativeTarget "EulaliaTests" */;
+			buildPhases = (
+				2AA6DAF11D0DFBED00A314AC /* Sources */,
+				2AA6DAF21D0DFBED00A314AC /* Frameworks */,
+				2AA6DAF31D0DFBED00A314AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AA6DAF71D0DFBED00A314AC /* PBXTargetDependency */,
+			);
+			name = EulaliaTests;
+			productName = EulaliaTests;
+			productReference = 2AA6DAF51D0DFBED00A314AC /* EulaliaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AA6DAFF1D0DFBED00A314AC /* EulaliaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA6DB0F1D0DFBED00A314AC /* Build configuration list for PBXNativeTarget "EulaliaUITests" */;
+			buildPhases = (
+				2AA6DAFC1D0DFBED00A314AC /* Sources */,
+				2AA6DAFD1D0DFBED00A314AC /* Frameworks */,
+				2AA6DAFE1D0DFBED00A314AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AA6DB021D0DFBED00A314AC /* PBXTargetDependency */,
+			);
+			name = EulaliaUITests;
+			productName = EulaliaUITests;
+			productReference = 2AA6DB001D0DFBED00A314AC /* EulaliaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AA6DAD91D0DFBED00A314AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Eulalia;
+				TargetAttributes = {
+					2AA6DAE01D0DFBED00A314AC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2AA6DAF41D0DFBED00A314AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2AA6DAE01D0DFBED00A314AC;
+					};
+					2AA6DAFF1D0DFBED00A314AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2AA6DAE01D0DFBED00A314AC;
+					};
+				};
+			};
+			buildConfigurationList = 2AA6DADC1D0DFBED00A314AC /* Build configuration list for PBXProject "Eulalia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AA6DAD81D0DFBED00A314AC;
+			productRefGroup = 2AA6DAE21D0DFBED00A314AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AA6DAE01D0DFBED00A314AC /* Eulalia */,
+				2AA6DAF41D0DFBED00A314AC /* EulaliaTests */,
+				2AA6DAFF1D0DFBED00A314AC /* EulaliaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AA6DADF1D0DFBED00A314AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA6DAEF1D0DFBED00A314AC /* LaunchScreen.storyboard in Resources */,
+				2AA6DAEC1D0DFBED00A314AC /* Assets.xcassets in Resources */,
+				2AA6DAEA1D0DFBED00A314AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA6DAF31D0DFBED00A314AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA6DAFE1D0DFBED00A314AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0110FADA05FC06ED2C2254B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eulalia/Pods-Eulalia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C4D80948B8C5E36FA5DC568 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAE836EC519B2783CFDC7700 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eulalia/Pods-Eulalia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AA6DADD1D0DFBED00A314AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA6DAE71D0DFBED00A314AC /* ViewController.swift in Sources */,
+				2AA6DAE51D0DFBED00A314AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA6DAF11D0DFBED00A314AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA6DAFA1D0DFBED00A314AC /* EulaliaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA6DAFC1D0DFBED00A314AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA6DB051D0DFBED00A314AC /* EulaliaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AA6DAF71D0DFBED00A314AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AA6DAE01D0DFBED00A314AC /* Eulalia */;
+			targetProxy = 2AA6DAF61D0DFBED00A314AC /* PBXContainerItemProxy */;
+		};
+		2AA6DB021D0DFBED00A314AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AA6DAE01D0DFBED00A314AC /* Eulalia */;
+			targetProxy = 2AA6DB011D0DFBED00A314AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AA6DAE81D0DFBED00A314AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA6DAE91D0DFBED00A314AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AA6DAED1D0DFBED00A314AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA6DAEE1D0DFBED00A314AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AA6DB071D0DFBED00A314AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AA6DB081D0DFBED00A314AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AA6DB0A1D0DFBED00A314AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A328F6A7D24169F8B398D9E6 /* Pods-Eulalia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Eulalia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cegonya.Eulalia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AA6DB0B1D0DFBED00A314AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6940C0B6750B687EE682CFE7 /* Pods-Eulalia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Eulalia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cegonya.Eulalia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2AA6DB0D1D0DFBED00A314AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EulaliaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cegonya.EulaliaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eulalia.app/Eulalia";
+			};
+			name = Debug;
+		};
+		2AA6DB0E1D0DFBED00A314AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EulaliaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cegonya.EulaliaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eulalia.app/Eulalia";
+			};
+			name = Release;
+		};
+		2AA6DB101D0DFBED00A314AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EulaliaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cegonya.EulaliaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Eulalia;
+			};
+			name = Debug;
+		};
+		2AA6DB111D0DFBED00A314AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EulaliaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cegonya.EulaliaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Eulalia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AA6DADC1D0DFBED00A314AC /* Build configuration list for PBXProject "Eulalia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA6DB071D0DFBED00A314AC /* Debug */,
+				2AA6DB081D0DFBED00A314AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA6DB091D0DFBED00A314AC /* Build configuration list for PBXNativeTarget "Eulalia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA6DB0A1D0DFBED00A314AC /* Debug */,
+				2AA6DB0B1D0DFBED00A314AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA6DB0C1D0DFBED00A314AC /* Build configuration list for PBXNativeTarget "EulaliaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA6DB0D1D0DFBED00A314AC /* Debug */,
+				2AA6DB0E1D0DFBED00A314AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA6DB0F1D0DFBED00A314AC /* Build configuration list for PBXNativeTarget "EulaliaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA6DB101D0DFBED00A314AC /* Debug */,
+				2AA6DB111D0DFBED00A314AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AA6DAD91D0DFBED00A314AC /* Project object */;
+}
