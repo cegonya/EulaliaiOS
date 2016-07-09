@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bWX-Q5-AoG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JQ0-2d-F6b">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Eulalia-->
+        <!--Navigation Controller-->
+        <scene sceneID="Ahy-ff-GYF">
+            <objects>
+                <navigationController id="JQ0-2d-F6b" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="juw-Sm-ykV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.8901960784313725" green="0.1803921568627451" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="L9W-kl-lsh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXl-pA-Cdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932" y="477"/>
+        </scene>
+        <!--Emergencias-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Eulalia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,51 +37,99 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZK-jl-FkJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWV-uU-zXg">
+                                <rect key="frame" x="0.0" y="596" width="414" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huayco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5A-yu-ecX">
+                                        <rect key="frame" x="20" y="14" width="256" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="7I0-2h-FDU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huánuco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-vz-RYc">
+                                        <rect key="frame" x="20" y="43" width="256" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="1Xh-17-JJk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El terremoto de 7.8 grados en la escala de Richter sucedí­a a las 6:40pm del dí­a 15 de agosto del 2007 en la ciudad de Pisco" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUG-HZ-iof">
+                                        <rect key="frame" x="20" y="72" width="374" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.25882352941176467" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CUG-HZ-iof" firstAttribute="top" secondItem="TBW-vz-RYc" secondAttribute="bottom" constant="8" id="DZi-cW-vqs"/>
+                                    <constraint firstItem="CUG-HZ-iof" firstAttribute="leading" secondItem="IWV-uU-zXg" secondAttribute="leading" constant="20" id="P5j-me-04T"/>
+                                    <constraint firstAttribute="bottom" secondItem="CUG-HZ-iof" secondAttribute="bottom" constant="8" id="S3B-yg-NuB"/>
+                                    <constraint firstItem="TBW-vz-RYc" firstAttribute="leading" secondItem="IWV-uU-zXg" secondAttribute="leading" constant="20" id="a0U-Hc-LUF"/>
+                                    <constraint firstItem="B5A-yu-ecX" firstAttribute="leading" secondItem="IWV-uU-zXg" secondAttribute="leading" constant="20" id="b6v-5D-Mln"/>
+                                    <constraint firstAttribute="height" constant="140" id="fhn-gx-SC4"/>
+                                    <constraint firstAttribute="trailing" secondItem="CUG-HZ-iof" secondAttribute="trailing" constant="20" id="gcq-WZ-Zsg"/>
+                                    <constraint firstItem="B5A-yu-ecX" firstAttribute="top" secondItem="IWV-uU-zXg" secondAttribute="top" constant="14" id="kP7-6S-WGc"/>
+                                    <constraint firstAttribute="trailing" secondItem="TBW-vz-RYc" secondAttribute="trailing" constant="138" id="muK-YM-rib"/>
+                                    <constraint firstItem="TBW-vz-RYc" firstAttribute="top" secondItem="B5A-yu-ecX" secondAttribute="bottom" constant="8" id="s2Q-HH-F3e"/>
+                                    <constraint firstAttribute="trailing" secondItem="B5A-yu-ecX" secondAttribute="trailing" constant="138" id="vC8-uv-CEA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dZK-jl-FkJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2mw-7g-btv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dZK-jl-FkJ" secondAttribute="bottom" id="3qY-f7-vWg"/>
+                            <constraint firstItem="dZK-jl-FkJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mkc-KS-tyg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IWV-uU-zXg" secondAttribute="bottom" id="VX8-zK-XMv"/>
+                            <constraint firstAttribute="trailing" secondItem="IWV-uU-zXg" secondAttribute="trailing" id="bUv-fm-4nV"/>
+                            <constraint firstAttribute="trailing" secondItem="dZK-jl-FkJ" secondAttribute="trailing" id="cyL-IQ-zCa"/>
+                            <constraint firstItem="IWV-uU-zXg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eC3-0D-e5c"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Eulalia" id="rxg-a0-oh2"/>
+                    <navigationItem key="navigationItem" title="Emergencias" id="ro7-0y-H15"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <segue destination="3xy-H8-rB7" kind="show" identifier="SeguePtoAcopio" id="eK7-VE-PU7"/>
+                        <outlet property="constraintEmergenciaDetailBottomLayout" destination="VX8-zK-XMv" id="OBZ-jC-JlJ"/>
+                        <outlet property="labelDepartamento" destination="TBW-vz-RYc" id="bMA-es-BrA"/>
+                        <outlet property="labelDescription" destination="CUG-HZ-iof" id="XQw-5u-r70"/>
+                        <outlet property="labelTitle" destination="B5A-yu-ecX" id="2FR-vo-hw5"/>
+                        <outlet property="viewGMSMap" destination="dZK-jl-FkJ" id="UcN-1C-oy9"/>
+                        <segue destination="IGA-jQ-Vbs" kind="show" id="Fra-bb-5Kh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="264.75"/>
+            <point key="canvasLocation" x="-115" y="490"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="FKO-ts-ycl">
+        <scene sceneID="aYi-uj-WAO">
             <objects>
-                <viewController id="3xy-H8-rB7" sceneMemberID="viewController">
+                <viewController id="IGA-jQ-Vbs" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hJH-71-KuV"/>
-                        <viewControllerLayoutGuide type="bottom" id="dej-V9-vFg"/>
+                        <viewControllerLayoutGuide type="top" id="FGI-i8-o86"/>
+                        <viewControllerLayoutGuide type="bottom" id="sj6-4d-Ibd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bRz-CR-IEQ">
+                    <view key="view" contentMode="scaleToFill" id="y6E-Tg-8TW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mKD-4I-yCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXJ-KX-u0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1362" y="270.75"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WgY-O5-AAp">
-            <objects>
-                <navigationController id="bWX-Q5-AoG" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qT6-Zw-qVi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Esc-cg-XmK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sLB-o3-UQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-544" y="265"/>
+            <point key="canvasLocation" x="457" y="490"/>
         </scene>
     </scenes>
 </document>
