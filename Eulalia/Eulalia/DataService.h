@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Emergencia.h"
+#import "PuntoAcopio.h"
 
 @interface DataService : NSObject
 
 + (instancetype)sharedInstance;
 - (void)getEmergencias:(void (^)(NSArray *emergencias))success failure:(void (^)(NSError *error))failure;
-- (void)getPtoAcopioWithId:(NSString *)uid success:(void (^)(NSArray *emergencias))success failure:(void (^)(NSError *error))failure;
+- (void)getPtoAcopioWithId:(NSString *)uid success:(void (^)(PuntoAcopio *puntoAcopio))success failure:(void (^)(NSError *error))failure;
 
 @end

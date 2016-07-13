@@ -65,13 +65,15 @@ static NSString *const baseURL = @"http://127.0.0.1:8088/service/";
                      }];
 }
 
-- (void)getPtoAcopioWithId:(NSString *)uid success:(void (^)(NSArray *emergencias))success failure:(void (^)(NSError *error))failure
+- (void)getPtoAcopioWithId:(NSString *)uid success:(void (^)(PuntoAcopio *puntoAcopio))success failure:(void (^)(NSError *error))failure
 {
     [self.sessionManager GET:[NSString stringWithFormat:@"puntodeacopio/%@",uid]
                   parameters:nil
                     progress:nil
                      success:^(NSURLSessionDataTask *task, id response){
-                         NSLog(@"data : %@",response);
+                         if ([response isKindOfClass:[NSDictionary class]]) {
+                             PuntoAcopio *puntoAcopio = [[PuntoAcopio alloc] initWithData:response];
+                         }
                      }
                      failure:^(NSURLSessionDataTask *task, NSError *error){
                          NSLog(@"error : %@",error);

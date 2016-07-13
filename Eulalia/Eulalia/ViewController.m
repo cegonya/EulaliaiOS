@@ -39,6 +39,15 @@
     self.constraintEmergenciaDetailBottomLayout.constant = -140;
     [self loadEmergenciasData];
     
+    DataService *dataService = [DataService sharedInstance];
+    [dataService getPtoAcopioWithId:@"1"
+                            success:^(PuntoAcopio *puntoAcopio){
+                            
+                            }
+                            failure:^(NSError *error){
+                            
+                            }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
