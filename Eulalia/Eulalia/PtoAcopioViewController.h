@@ -15,5 +15,6 @@
 @property (copy, nonatomic) NSArray *ptosAcopio;
 @property (copy, nonatomic) NSNumber *latitude;
 @property (copy, nonatomic) NSNumber *longitude;
+@property (copy, nonatomic) NSString *titleEmergencia;
 
 @end

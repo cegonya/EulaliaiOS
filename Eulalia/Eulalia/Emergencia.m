@@ -44,7 +44,7 @@
         _provincia = data[@"provincia"] ? data[@"provincia"] : @"";
         _distrito = data[@"distrito"] ? data[@"distrito"] : @"";
         _title = data[@"titulo"] ? data[@"titulo"] : @"";
-        _descriptionEmergencia = data[@"descripcion"] ? data[@"descripcion"] : @"";
+        _descriptionEmergencia = [data[@"descripcion"] isKindOfClass:[NSString class]] ? data[@"descripcion"] : @"";
         
         NSArray *ptosAcopioData = data[@"puntosDeAcopio"];
         NSMutableArray *ptosAcopio = [NSMutableArray new];

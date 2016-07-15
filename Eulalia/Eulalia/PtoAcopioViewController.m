@@ -13,6 +13,7 @@
 @interface PtoAcopioViewController ()
 
 @property (strong, nonatomic) GMSMapView *mapView;
+@property (strong, nonatomic) NSMutableArray *markers;
 @property (weak, nonatomic) IBOutlet UIView *viewGMSMap;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintPtoAcopioDetailBottomLayout;
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
@@ -32,22 +33,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:[self.latitude doubleValue]
-                                                            longitude:[self.longitude doubleValue]
-                                                                 zoom:10.5];
+//    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:[self.latitude doubleValue]
+//                                                            longitude:[self.longitude doubleValue]
+//                                                                 zoom:10.5];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-10.6047162
+                                                            longitude:-73.8051043
+                                                                 zoom:5];
     self.mapView = [GMSMapView mapWithFrame:self.viewGMSMap.bounds camera:camera];
     self.mapView.myLocationEnabled = YES;
     self.mapView.settings.myLocationButton = YES;
     self.mapView.delegate = self;
     [self.viewGMSMap addSubview:self.mapView];
     
+    self.markers = [NSMutableArray new];
     self.constraintPtoAcopioDetailBottomLayout.constant = -140;
     [self addMarkers];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.title = @"Puntos de Acopio";
+    self.title = self.titleEmergencia;//@"Puntos de Acopio";
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -67,6 +72,7 @@
 - (void)addMarkers
 {
     [self.mapView clear];
+    [self.markers removeAllObjects];
     
     for (PuntoAcopio *puntoAcopio in self.ptosAcopio) {
         // Creates a marker in the center of the map.
@@ -75,6 +81,7 @@
         marker.userData = puntoAcopio;
         marker.icon = [UIImage imageNamed:@"Pin2"];
         marker.map = self.mapView;
+        [self.markers addObject:marker];
     }
     
 }
@@ -88,6 +95,12 @@
     self.labelAddress.text = self.ptoAcopioSelected.address;
     self.labelPhone.text = self.ptoAcopioSelected.distrito;
     self.labelContact.text =  self.ptoAcopioSelected.provincia;
+    
+    for (GMSMarker *oneMarker in self.markers) {
+        oneMarker.icon = [UIImage imageNamed:@"Pin2"];
+    }
+    
+    marker.icon = [UIImage imageNamed:@"Pin2_selected"];
     
     [UIView animateWithDuration:3.0f
                      animations:^{

@@ -46,7 +46,7 @@
                                 <rect key="frame" x="0.0" y="596" width="414" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huayco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5A-yu-ecX">
-                                        <rect key="frame" x="20" y="14" width="256" height="21"/>
+                                        <rect key="frame" x="20" y="14" width="374" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="7I0-2h-FDU"/>
                                         </constraints>
@@ -83,7 +83,7 @@
                                     <constraint firstItem="B5A-yu-ecX" firstAttribute="top" secondItem="IWV-uU-zXg" secondAttribute="top" constant="14" id="kP7-6S-WGc"/>
                                     <constraint firstAttribute="trailing" secondItem="TBW-vz-RYc" secondAttribute="trailing" constant="138" id="muK-YM-rib"/>
                                     <constraint firstItem="TBW-vz-RYc" firstAttribute="top" secondItem="B5A-yu-ecX" secondAttribute="bottom" constant="8" id="s2Q-HH-F3e"/>
-                                    <constraint firstAttribute="trailing" secondItem="B5A-yu-ecX" secondAttribute="trailing" constant="138" id="vC8-uv-CEA"/>
+                                    <constraint firstAttribute="trailing" secondItem="B5A-yu-ecX" secondAttribute="trailing" constant="20" id="vC8-uv-CEA"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="FQG-i8-5vP" appends="YES" id="QZE-2K-Ebc"/>

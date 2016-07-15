@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) GMSMapView *mapView;
 @property (strong, nonatomic) NSArray *emergencias;
+@property (strong, nonatomic) NSMutableArray *markers;
 @property (weak, nonatomic) IBOutlet UIView *viewGMSMap;
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UILabel *labelDepartamento;
@@ -33,15 +34,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-9.6047162
-                                                            longitude:-75.8051043
-                                                                 zoom:5];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-10.6047162
+                                                            longitude:-73.8051043
+                                                                 zoom:5.2];
     self.mapView = [GMSMapView mapWithFrame:self.viewGMSMap.bounds camera:camera];
     self.mapView.myLocationEnabled = YES;
     self.mapView.settings.myLocationButton = YES;
     self.mapView.delegate = self;
     [self.viewGMSMap addSubview:self.mapView];
     
+    self.markers = [NSMutableArray new];
     self.constraintEmergenciaDetailBottomLayout.constant = -140;
     [self loadEmergenciasData];
     
@@ -70,6 +72,7 @@
         VCPtoAcopio.ptosAcopio = self.emergenciaSelected.ptosAcopio;
         VCPtoAcopio.latitude = self.emergenciaSelected.latitude;
         VCPtoAcopio.longitude = self.emergenciaSelected.longitude;
+        VCPtoAcopio.titleEmergencia = self.emergenciaSelected.title;
     }
 }
 
@@ -91,6 +94,7 @@
 - (void)addMarkers
 {
     [self.mapView clear];
+    [self.markers removeAllObjects];
     
     for (Emergencia *emergencia in self.emergencias) {
         // Creates a marker in the center of the map.
@@ -102,6 +106,7 @@
         marker.userData = emergencia;
         marker.icon = [UIImage imageNamed:@"Pin1"];
         marker.map = self.mapView;
+        [self.markers addObject:marker];
     }
     
 }
@@ -114,6 +119,12 @@
     self.labelTitle.text = self.emergenciaSelected.title;
     self.labelDepartamento.text = self.emergenciaSelected.departamento;
     self.labelDescription.text = self.emergenciaSelected.descriptionEmergencia;
+    
+    for (GMSMarker *oneMarker in self.markers) {
+        oneMarker.icon = [UIImage imageNamed:@"Pin1"];
+    }
+    
+    marker.icon = [UIImage imageNamed:@"Pin1_selected"];
     
     [UIView animateWithDuration:3.0f
                      animations:^{
