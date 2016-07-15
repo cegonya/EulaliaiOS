@@ -9,7 +9,8 @@
 #import "DataService.h"
 #import <AFNetworking/AFNetworking.h>
 
-static NSString *const baseURL = @"http://192.168.0.16:8088/service/";
+static NSString *const baseURL = @"http://api-peruhelper.rhcloud.com/";
+//@"http://10.100.152.222:8088/service/"
 
 @interface DataService ()
 
@@ -48,7 +49,7 @@ static NSString *const baseURL = @"http://192.168.0.16:8088/service/";
 - (void)getEmergencias:(void (^)(NSArray *emergencias))success failure:(void (^)(NSError *error))failure
 {
     
-    [self.sessionManager GET:@"emergencias"
+    [self.sessionManager GET:@"emergencia_puntoacopio"
                   parameters:nil
                     progress:nil
                      success:^(NSURLSessionDataTask *task, id response){
@@ -68,7 +69,7 @@ static NSString *const baseURL = @"http://192.168.0.16:8088/service/";
 
 - (void)getPtoAcopioWithId:(NSString *)uid success:(void (^)(PuntoAcopio *puntoAcopio))success failure:(void (^)(NSError *error))failure
 {
-    [self.sessionManager GET:[NSString stringWithFormat:@"puntodeacopio/%@",uid]
+    [self.sessionManager GET:[NSString stringWithFormat:@"puntoacopio/%@",uid]
                   parameters:nil
                     progress:nil
                      success:^(NSURLSessionDataTask *task, id response){

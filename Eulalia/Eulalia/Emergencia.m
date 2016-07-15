@@ -46,7 +46,7 @@
         _title = data[@"titulo"] ? data[@"titulo"] : @"";
         _descriptionEmergencia = data[@"descripcion"] ? data[@"descripcion"] : @"";
         
-        NSArray *ptosAcopioData = data[@"puntos de acopio"];
+        NSArray *ptosAcopioData = data[@"puntosDeAcopio"];
         NSMutableArray *ptosAcopio = [NSMutableArray new];
         if (ptosAcopioData) {
             for (NSDictionary *dictionaryPtoAcopio in ptosAcopioData) {

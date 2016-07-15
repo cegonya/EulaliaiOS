@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        _fullName = data[@"nombre completo"] ? data[@"nombre completo"] : @"";
+        _fullName = data[@"nombreCompleto"] ? data[@"nombreCompleto"] : @"";
         _address = data[@"direccion"] ? data[@"direccion"] : @"";
         _phone = data[@"telefono"] ? data[@"telefono"] : @"";
         _institution = data[@"institucion"] ? data[@"institucion"] : @"";

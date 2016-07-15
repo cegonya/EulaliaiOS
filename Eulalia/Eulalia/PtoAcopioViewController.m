@@ -60,7 +60,7 @@
     //
     if ([segue.identifier isEqualToString:@"segueShowPuntoAcopio"]) {
         PtoAcopioDetailViewController *VCPtoAcopioDetail = [segue destinationViewController];
-        VCPtoAcopioDetail.ptoAcopioUID = [self.ptoAcopioSelected.uid stringValue];
+        VCPtoAcopioDetail.ptoAcopioUID = self.ptoAcopioSelected.uid;
     }
 }
 
@@ -87,7 +87,7 @@
     self.labelTitle.text = @"Punto de Acopio";
     self.labelAddress.text = self.ptoAcopioSelected.address;
     self.labelPhone.text = self.ptoAcopioSelected.distrito;
-    self.labelContact.text =  self.ptoAcopioSelected.reference;
+    self.labelContact.text =  self.ptoAcopioSelected.provincia;
     
     [UIView animateWithDuration:3.0f
                      animations:^{

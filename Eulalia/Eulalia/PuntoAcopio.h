@@ -12,7 +12,7 @@
 
 @interface PuntoAcopio : NSObject
 
-@property (nonatomic, readonly) NSNumber *uid;
+@property (nonatomic, readonly) NSString *uid;
 @property (nonatomic, readonly) NSNumber *latitude;
 @property (nonatomic, readonly) NSNumber *longitude;
 @property (nonatomic, readonly) NSString *departamento;
