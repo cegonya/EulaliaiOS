@@ -11,6 +11,5 @@
 
 @interface ViewController : UIViewController <GMSMapViewDelegate>
 
-
 @end
 

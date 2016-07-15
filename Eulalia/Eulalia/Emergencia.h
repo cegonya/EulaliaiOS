@@ -19,6 +19,7 @@
 @property (nonatomic, readonly) NSString *distrito;
 @property (nonatomic, readonly) NSString *title;
 @property (nonatomic, readonly) NSString *descriptionEmergencia;
+@property (nonatomic, readonly) NSArray *ptosAcopio;
 
 - (instancetype)initWithData:(NSDictionary *)data;
 

@@ -9,7 +9,7 @@
 #import "DataService.h"
 #import <AFNetworking/AFNetworking.h>
 
-static NSString *const baseURL = @"http://127.0.0.1:8088/service/";
+static NSString *const baseURL = @"http://192.168.0.16:8088/service/";
 
 @interface DataService ()
 
@@ -62,6 +62,7 @@ static NSString *const baseURL = @"http://127.0.0.1:8088/service/";
                      }
                      failure:^(NSURLSessionDataTask *task, NSError *error){
                          NSLog(@"error : %@",error);
+                         failure(error);
                      }];
 }
 
@@ -73,10 +74,14 @@ static NSString *const baseURL = @"http://127.0.0.1:8088/service/";
                      success:^(NSURLSessionDataTask *task, id response){
                          if ([response isKindOfClass:[NSDictionary class]]) {
                              PuntoAcopio *puntoAcopio = [[PuntoAcopio alloc] initWithData:response];
+                             success(puntoAcopio);
+                         } else {
+                             failure(nil);
                          }
                      }
                      failure:^(NSURLSessionDataTask *task, NSError *error){
                          NSLog(@"error : %@",error);
+                         failure(error);
                      }];
 }
 

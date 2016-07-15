@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PtoAcopioViewController : UIViewController
+@import GoogleMaps;
+
+@interface PtoAcopioViewController : UIViewController <GMSMapViewDelegate>
+
+@property (copy, nonatomic) NSArray *ptosAcopio;
+@property (copy, nonatomic) NSNumber *latitude;
+@property (copy, nonatomic) NSNumber *longitude;
 
 @end

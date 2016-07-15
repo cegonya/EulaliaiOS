@@ -14,14 +14,39 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="3v7-vJ-5xW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="agK-I9-5HM">
+                                <rect key="frame" x="57" y="218" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Bto-1F-5cN"/>
+                                    <constraint firstAttribute="height" constant="300" id="g80-ty-Fmp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3v7-vJ-5xW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3Ex-j9-p7f"/>
+                            <constraint firstItem="agK-I9-5HM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="C4Q-5d-qSW"/>
+                            <constraint firstItem="3v7-vJ-5xW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="NbI-AC-S68"/>
+                            <constraint firstAttribute="trailing" secondItem="3v7-vJ-5xW" secondAttribute="trailing" id="SSx-Wl-C2e"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3v7-vJ-5xW" secondAttribute="bottom" id="jxK-iw-Yqt"/>
+                            <constraint firstItem="agK-I9-5HM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mTb-FL-zU0"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="320" height="569"/>
+        <image name="logo" width="192" height="263"/>
+    </resources>
 </document>

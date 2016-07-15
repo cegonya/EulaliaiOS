@@ -7,6 +7,7 @@
 //
 
 #import "Emergencia.h"
+#import "PuntoAcopio.h"
 
 @interface Emergencia()
 
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) NSString *distrito;
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *descriptionEmergencia;
+@property (strong, nonatomic) NSArray *ptosAcopio;
 
 @end
 
@@ -43,6 +45,21 @@
         _distrito = data[@"distrito"] ? data[@"distrito"] : @"";
         _title = data[@"titulo"] ? data[@"titulo"] : @"";
         _descriptionEmergencia = data[@"descripcion"] ? data[@"descripcion"] : @"";
+        
+        NSArray *ptosAcopioData = data[@"puntos de acopio"];
+        NSMutableArray *ptosAcopio = [NSMutableArray new];
+        if (ptosAcopioData) {
+            for (NSDictionary *dictionaryPtoAcopio in ptosAcopioData) {
+                PuntoAcopio *puntoAcopio = [[PuntoAcopio alloc] initWithData:dictionaryPtoAcopio];
+                if (puntoAcopio) {
+                    [ptosAcopio addObject:puntoAcopio];
+                }
+                
+            }
+            _ptosAcopio = [NSArray arrayWithArray:ptosAcopio];
+        } else {
+            _ptosAcopio = [NSArray new];
+        }
     }
     
     return self;

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B719E27F81DA6215C17B300 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BC82D0BB446A616A690EAA /* libPods.a */; };
+		2A2445E91D39571C0053A2F7 /* PtoAcopioDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2445E81D39571C0053A2F7 /* PtoAcopioDetailViewController.m */; };
+		2A2445EC1D395E820053A2F7 /* NeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2445EB1D395E820053A2F7 /* NeedTableViewCell.m */; };
 		2A7A42FD1D349F710015D71F /* PuntoAcopio.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A42FC1D349F710015D71F /* PuntoAcopio.m */; };
 		2A7A43031D34A3B10015D71F /* Need.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A43021D34A3B10015D71F /* Need.m */; };
 		2A7A43061D34A6030015D71F /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A43051D34A6030015D71F /* Contact.m */; };
@@ -43,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		11BC82D0BB446A616A690EAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2445E71D39571C0053A2F7 /* PtoAcopioDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtoAcopioDetailViewController.h; sourceTree = "<group>"; };
+		2A2445E81D39571C0053A2F7 /* PtoAcopioDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PtoAcopioDetailViewController.m; sourceTree = "<group>"; };
+		2A2445EA1D395E820053A2F7 /* NeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeedTableViewCell.h; sourceTree = "<group>"; };
+		2A2445EB1D395E820053A2F7 /* NeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeedTableViewCell.m; sourceTree = "<group>"; };
 		2A7A42FB1D349F710015D71F /* PuntoAcopio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuntoAcopio.h; sourceTree = "<group>"; };
 		2A7A42FC1D349F710015D71F /* PuntoAcopio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuntoAcopio.m; sourceTree = "<group>"; };
 		2A7A43011D34A3B10015D71F /* Need.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Need.h; sourceTree = "<group>"; };
@@ -141,6 +147,10 @@
 				2ADD66061D30A56A00383408 /* ViewController.m */,
 				2ADD66391D30DBC100383408 /* PtoAcopioViewController.h */,
 				2ADD663A1D30DBC100383408 /* PtoAcopioViewController.m */,
+				2A2445E71D39571C0053A2F7 /* PtoAcopioDetailViewController.h */,
+				2A2445E81D39571C0053A2F7 /* PtoAcopioDetailViewController.m */,
+				2A2445EA1D395E820053A2F7 /* NeedTableViewCell.h */,
+				2A2445EB1D395E820053A2F7 /* NeedTableViewCell.m */,
 				2ADD66081D30A56A00383408 /* Main.storyboard */,
 				2ADD660B1D30A56A00383408 /* Assets.xcassets */,
 				2ADD660D1D30A56A00383408 /* LaunchScreen.storyboard */,
@@ -386,7 +396,9 @@
 				2ADD66371D30CBD200383408 /* Emergencia.m in Sources */,
 				2ADD663B1D30DBC100383408 /* PtoAcopioViewController.m in Sources */,
 				2ADD66071D30A56A00383408 /* ViewController.m in Sources */,
+				2A2445EC1D395E820053A2F7 /* NeedTableViewCell.m in Sources */,
 				2ADD66041D30A56A00383408 /* AppDelegate.m in Sources */,
+				2A2445E91D39571C0053A2F7 /* PtoAcopioDetailViewController.m in Sources */,
 				2A7A42FD1D349F710015D71F /* PuntoAcopio.m in Sources */,
 				2A7A43031D34A3B10015D71F /* Need.m in Sources */,
 				2ADD66011D30A56A00383408 /* main.m in Sources */,

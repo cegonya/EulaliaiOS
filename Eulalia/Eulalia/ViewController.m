@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DataService.h"
+#import "PtoAcopioViewController.h"
 
 @interface ViewController ()
 
@@ -18,10 +19,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelDepartamento;
 @property (weak, nonatomic) IBOutlet UILabel *labelDescription;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintEmergenciaDetailBottomLayout;
+@property (strong, nonatomic) Emergencia *emergenciaSelected;
+
+- (IBAction)tapOnEmergencia:(UITapGestureRecognizer *)sender;
 
 @end
 
 @implementation ViewController
+
+#pragma mark lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,20 +45,32 @@
     self.constraintEmergenciaDetailBottomLayout.constant = -140;
     [self loadEmergenciasData];
     
-    DataService *dataService = [DataService sharedInstance];
-    [dataService getPtoAcopioWithId:@"1"
-                            success:^(PuntoAcopio *puntoAcopio){
-                            
-                            }
-                            failure:^(NSError *error){
-                            
-                            }];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.title = @"Emergencias";
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    self.title = @"";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"segueShowPuntosAcopio"]) {
+        NSLog(@"%@",self.emergenciaSelected);
+        PtoAcopioViewController *VCPtoAcopio = segue.destinationViewController;
+        VCPtoAcopio.ptosAcopio = self.emergenciaSelected.ptosAcopio;
+        VCPtoAcopio.latitude = self.emergenciaSelected.latitude;
+        VCPtoAcopio.longitude = self.emergenciaSelected.longitude;
+    }
 }
 
 #pragma mark - Private Methods
@@ -82,6 +100,7 @@
         marker.title = emergencia.departamento;
         marker.snippet = emergencia.title;
         marker.userData = emergencia;
+        marker.icon = [UIImage imageNamed:@"Pin1"];
         marker.map = self.mapView;
     }
     
@@ -91,6 +110,11 @@
 
 - (BOOL)mapView:(GMSMapView *)mapView didTapMarker:(GMSMarker *)marker
 {
+    self.emergenciaSelected = marker.userData;
+    self.labelTitle.text = self.emergenciaSelected.title;
+    self.labelDepartamento.text = self.emergenciaSelected.departamento;
+    self.labelDescription.text = self.emergenciaSelected.descriptionEmergencia;
+    
     [UIView animateWithDuration:3.0f
                      animations:^{
                          self.constraintEmergenciaDetailBottomLayout.constant = 0;
@@ -100,4 +124,11 @@
     return YES;
 }
 
+#pragma mark Actions
+
+- (IBAction)tapOnEmergencia:(UITapGestureRecognizer *)sender
+{
+    [self performSegueWithIdentifier:@"segueShowPuntosAcopio"
+                              sender:nil];
+}
 @end
