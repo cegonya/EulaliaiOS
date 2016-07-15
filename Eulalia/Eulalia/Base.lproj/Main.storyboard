@@ -336,6 +336,51 @@
                                     <outlet property="delegate" destination="afS-WC-65t" id="VdY-41-Uqt"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDr-Kh-xUU">
+                                <rect key="frame" x="0.0" y="269" width="414" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="GWM-Oi-BRe">
+                                        <rect key="frame" x="15" y="5" width="384" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="xnJ-fn-Nn2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxm-3A-VEJ">
+                                        <rect key="frame" x="15" y="25" width="384" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="aaX-Sc-x8e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Institución/Contacto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCy-U3-b9b">
+                                        <rect key="frame" x="15" y="45" width="384" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="uhR-58-w4U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.55294117647058827" blue="0.67843137254901964" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lxm-3A-VEJ" firstAttribute="leading" secondItem="eDr-Kh-xUU" secondAttribute="leading" constant="15" id="0T5-E7-5B4"/>
+                                    <constraint firstItem="mCy-U3-b9b" firstAttribute="top" secondItem="lxm-3A-VEJ" secondAttribute="bottom" constant="5" id="CGR-f7-jBS"/>
+                                    <constraint firstItem="GWM-Oi-BRe" firstAttribute="leading" secondItem="eDr-Kh-xUU" secondAttribute="leading" constant="15" id="Esv-WR-Mxi"/>
+                                    <constraint firstItem="GWM-Oi-BRe" firstAttribute="top" secondItem="eDr-Kh-xUU" secondAttribute="top" constant="5" id="GMD-c9-6NL"/>
+                                    <constraint firstAttribute="height" constant="65" id="K76-CT-elr"/>
+                                    <constraint firstAttribute="trailing" secondItem="GWM-Oi-BRe" secondAttribute="trailing" constant="15" id="ahz-JC-k4r"/>
+                                    <constraint firstAttribute="trailing" secondItem="mCy-U3-b9b" secondAttribute="trailing" constant="15" id="ehR-1t-wip"/>
+                                    <constraint firstAttribute="trailing" secondItem="lxm-3A-VEJ" secondAttribute="trailing" constant="15" id="evy-Q0-Csd"/>
+                                    <constraint firstItem="mCy-U3-b9b" firstAttribute="leading" secondItem="eDr-Kh-xUU" secondAttribute="leading" constant="15" id="ksX-H5-NLS"/>
+                                    <constraint firstItem="lxm-3A-VEJ" firstAttribute="top" secondItem="GWM-Oi-BRe" secondAttribute="bottom" constant="5" id="n1X-0Q-f5J"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiN-H6-Zrn">
                                 <rect key="frame" x="0.0" y="334" width="414" height="50"/>
                                 <subviews>
@@ -366,8 +411,11 @@
                             <constraint firstItem="BTb-rv-PkK" firstAttribute="top" secondItem="KiN-H6-Zrn" secondAttribute="bottom" id="EpL-Sl-UZV"/>
                             <constraint firstAttribute="trailing" secondItem="BTb-rv-PkK" secondAttribute="trailing" id="Hl1-S6-ugM"/>
                             <constraint firstAttribute="trailing" secondItem="KiN-H6-Zrn" secondAttribute="trailing" id="LPs-at-d7d"/>
+                            <constraint firstItem="eDr-Kh-xUU" firstAttribute="leading" secondItem="Mvi-kB-bkL" secondAttribute="leading" id="PrI-mC-jUP"/>
+                            <constraint firstItem="KiN-H6-Zrn" firstAttribute="top" secondItem="eDr-Kh-xUU" secondAttribute="bottom" id="SYa-1B-J53"/>
                             <constraint firstAttribute="trailing" secondItem="8F5-RM-BVj" secondAttribute="trailing" id="W0w-zn-D0I"/>
                             <constraint firstItem="8F5-RM-BVj" firstAttribute="top" secondItem="FZ5-IB-MW2" secondAttribute="bottom" id="cLE-hx-9GI"/>
+                            <constraint firstAttribute="trailing" secondItem="eDr-Kh-xUU" secondAttribute="trailing" id="cWb-OS-h2R"/>
                             <constraint firstItem="BTb-rv-PkK" firstAttribute="leading" secondItem="Mvi-kB-bkL" secondAttribute="leading" id="m1P-yg-LO8"/>
                             <constraint firstItem="3ef-O4-4En" firstAttribute="top" secondItem="BTb-rv-PkK" secondAttribute="bottom" id="qd7-f7-bsd"/>
                             <constraint firstItem="KiN-H6-Zrn" firstAttribute="leading" secondItem="Mvi-kB-bkL" secondAttribute="leading" id="wyP-s1-wFY"/>
@@ -378,8 +426,17 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Punto de Acopio" id="uAn-pD-rn4"/>
+                    <navigationItem key="navigationItem" title="Punto de Acopio" id="uAn-pD-rn4">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="wss-lQ-S48">
+                            <connections>
+                                <action selector="refreshButtonTap:" destination="afS-WC-65t" id="jMF-gA-z1D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="labelDetail1" destination="GWM-Oi-BRe" id="q7r-LM-zeP"/>
+                        <outlet property="labelDetail2" destination="lxm-3A-VEJ" id="pOz-pw-CdP"/>
+                        <outlet property="labelDetail3" destination="mCy-U3-b9b" id="GTQ-s1-xFu"/>
                         <outlet property="tableViewNeeds" destination="BTb-rv-PkK" id="urz-yJ-Km5"/>
                     </connections>
                 </viewController>

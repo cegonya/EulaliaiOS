@@ -16,8 +16,8 @@
     if (self) {
         _fullName = data[@"nombreCompleto"] ? data[@"nombreCompleto"] : @"";
         _address = data[@"direccion"] ? data[@"direccion"] : @"";
-        _phone = data[@"telefono"] ? data[@"telefono"] : @"";
-        _institution = data[@"institucion"] ? data[@"institucion"] : @"";
+        _phone = [data[@"telefono"] isKindOfClass:[NSString class]] ? data[@"telefono"] : @"";
+        _institution = [data[@"institucion"] isKindOfClass:[NSString class]]? data[@"institucion"] : @"";
     }
     return self;
 }

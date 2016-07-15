@@ -282,6 +282,12 @@
 				TargetAttributes = {
 					2ADD65FB1D30A56A00383408 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8K6AA758TL;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2ADD66141D30A56A00383408 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -545,9 +551,10 @@
 			baseConfigurationReference = EDF9A1A47E07B1E9B3F531A4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Eulalia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cegonya.Eulalia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santex.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -557,9 +564,10 @@
 			baseConfigurationReference = 77B30196BA1E18B1DC33FE81 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Eulalia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cegonya.Eulalia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santex.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
